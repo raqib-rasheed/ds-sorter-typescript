@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Sorter_1 = require("./Sorter");
+// import { NumbersCollection } from "./NumbersCollection";
+var charactersCollection_1 = require("./charactersCollection");
+var charactersCollection = new charactersCollection_1.CharactersCollection("RanDomStRinGToSorT");
+var sorter = new Sorter_1.Sorter(charactersCollection);
+sorter.sort();
+console.log(charactersCollection.data);
+// const numbersCollection = new NumbersCollection([10, 3, -5, 0]);
+// const sorter = new Sorter(numbersCollection);
+// sorter.sort();
+// console.log(numbersCollection.data);
